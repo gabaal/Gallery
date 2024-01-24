@@ -7,16 +7,15 @@
     <script src="./app.js" defer></script>
     <title>Gallery</title>
   </head>
-  <body>
-    <form id="form">
-      <input
-        type="text"
-        placeholder="what do you want to search"
-        id="input"
-        name="input"
-      />
-      <button type="submit">search</button>
-    </form>
-    <div id="img-container"></div>
+  <div id="gallery-container">
+    <img id="main-image" src="" alt="Unsplash Image">
+  </div>
+
+  <div id="thumbnails-container"></div>
+
+  <div id="search-container">
+    <input type="text" id="search-input" placeholder="Enter search term">
+    <button id="search-button">Search</button>
+  </div>
   </body>
 </html>
