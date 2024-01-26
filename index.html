@@ -5,17 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.css" />
     <script src="./app.js" defer></script>
-    <title>Gallery</title>
+    <title>Document</title>
   </head>
-  <div id="gallery-container">
-    <img id="main-image" src="" alt="Unsplash Image">
-  </div>
+  <body>
+    <div id="thumb-container" tabindex="0" role="list">
+      <!--tabIndex to allow keyboard focus, role to decribe the div as a list -->
+    </div>
+    <img src="" alt="" id="display" class="large-image" aria-live="off" />
 
-  <div id="thumbnails-container"></div>
-
-  <div id="search-container">
-    <input type="text" id="search-input" placeholder="Enter search term">
-    <button id="search-button">Search</button>
-  </div>
+    <!-- aria-atomic="true" -->
   </body>
 </html>
