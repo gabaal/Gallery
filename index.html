@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -8,11 +10,17 @@
     <title>Document</title>
   </head>
   <body>
-    <div id="thumb-container" tabindex="0" role="list">
+    <div id="thumb-container" role="list" tabindex="0" aria-label="Image Thumbnails">
       <!--tabIndex to allow keyboard focus, role to decribe the div as a list -->
     </div>
-    <img src="" alt="" id="display" class="large-image" aria-live="off" />
+    <img src="" alt="" id="display" class="large-image" role="img" aria-live="polite"/>
+    <div id="prevNext">
+      <button id= "prevBtn" class= "nav-button" aria-label="Previous Image">&#8249</button>
+      <button id= "nextBtn" class= "nav-button" aria-label="Next Image">&#8250</button>
+    </div>
 
     <!-- aria-atomic="true" -->
   </body>
 </html>
+
+
